@@ -1,0 +1,23 @@
+.box1 {
+  width: 100%;
+  margin: auto;
+}
+.box1-heading {
+  font-weight: bold;
+  font-size: 2.3rem;
+}
+.box1-para {
+  font-size: 1.5rem;
+}
+.pic1-size {
+  height: 300px;
+  width: 450px;
+}
+.col1 {
+  padding-right: 20px;
+}
+.col2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}

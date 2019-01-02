@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+
+import MainPage from "./Components/MainPage/MainPage";
+import Individual from "./Components/Individual/Individual";
+import Team from "./Components/Team/Team";
 import "./App.css";
-import { Button } from "antd";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -12,10 +15,16 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ alignItems: "center", width: "70%" }}>
-        <Button type="primary" style={{ display: "flex" }}>
-          Welcome TO the MailCastr-app..
-        </Button>
+      <div>
+        <div className="trial">
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" component={MainPage} exact />
+              <Route path="/individual" component={Individual} />
+              <Route path="/team" component={Team} />
+            </Switch>
+          </BrowserRouter>
+        </div>
       </div>
     );
   }
