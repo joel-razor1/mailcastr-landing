@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Header from "./iandtheader";
-import { Row, Col } from "antd";
+import { Row, Col, Icon } from "antd";
 import "./individual.css";
+import ForWhomBoxes from "./ForWhomBoxes";
+import CollapseContents from "./CollapseContents";
 import a from "./individual1.JPG";
 
 export default class Individual extends Component {
@@ -21,6 +23,7 @@ export default class Individual extends Component {
                   muultimodal interfaces gives users more power, but they will
                   also change the way users interact with the systems.
                 </p>
+                <ForWhomBoxes />
               </div>
             </Col>
             <Col span={12}>
@@ -29,6 +32,25 @@ export default class Individual extends Component {
               </div>
             </Col>
           </Row>
+        </div>
+        <br />
+        <br />
+        <div>
+          <p
+            style={{
+              textAlign: "center",
+              fontWeight: "bold",
+              fontSize: "1.5rem",
+              color: "#706da5"
+            }}
+          >
+            Make life easier, how?
+            <br />
+            <Icon type="down" />
+          </p>
+        </div>
+        <div>
+          <CollapseContents />
         </div>
       </div>
     );
