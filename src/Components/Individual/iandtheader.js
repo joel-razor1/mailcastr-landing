@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Icon, Button } from "antd";
 import a from "./mailcastr.png";
+import { Link } from "react-router-dom";
 
 export default class iandtheader extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class iandtheader extends Component {
           <img src={a} className="logo-pic-size" />
           <p className="logo-name">mailcastr</p>
           <Icon type="left" />
-          <p>Back to home</p>
+          <Link to="/">Back to home</Link>
           <div className="button-region">
             <Button
               size="large"

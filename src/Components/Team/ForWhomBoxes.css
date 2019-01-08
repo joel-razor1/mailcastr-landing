@@ -1,7 +1,7 @@
 .flexIt {
   width: 70%;
   display: flex;
-  border: 1px solid black;
+
   flex-wrap: wrap;
 }
 

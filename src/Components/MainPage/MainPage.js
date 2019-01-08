@@ -3,6 +3,7 @@ import a from "./pic1.JPG";
 import Header from "../Header/Header";
 import "./MainPage.css";
 import { Button } from "antd";
+import { Link } from "react-router-dom";
 
 export default class MainPage extends Component {
   render() {
@@ -21,12 +22,16 @@ export default class MainPage extends Component {
           <br />
           <div className="button-region1">
             <p style={{ marginRight: "10px" }}>I'm a </p>
-            <Button type="primary" size="large" className="individual-button">
-              Individual
-            </Button>
-            <Button type="primary" size="large" className="team-button">
-              Team Member
-            </Button>
+            <Link to="/individual">
+              <Button type="primary" size="large" className="individual-button">
+                Individual
+              </Button>
+            </Link>
+            <Link to="/team">
+              <Button type="primary" size="large" className="team-button">
+                Team Member
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
